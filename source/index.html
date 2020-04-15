@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial=scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Блог «Pasco»</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
@@ -11,6 +11,7 @@
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-Light.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <script>
       // Picture element HTML5 shiv
@@ -19,17 +20,264 @@
     <script src="js/picturefill.js" async></script>
   </head>
   <body>
-<!-- <div style="display:none">
+    <div style="display:none">
       <include src="build/img/sprite.svg"></include>
-    </div> СПРАЙТ-->
-    <header>
-      Заголовок
+    </div>
+    <header class="header-page">
+      <div class="container-header">
+        <ul class="social-list">
+          <li class="social-item"><a class="facebook-icon" href="https://www.facebook.com/"></a></li>
+          <li class="social-item"><a class="twitter-icon" href="https://twitter.com/"></a></li>
+          <li class="social-item"><a class="pinterest-icon" href="https://www.pinterest.ru/"></a></li>
+          <li class="social-item"><a class="vk-icon" href="https://vk.com/"></a></li>
+          <li class="social-item"><a class="google-icon" href="https://plus.google.com/"></a></li>
+          <li class="social-item"><a class="behance-icon" href="https://www.behance.net/"></a></li>
+          <li class="social-item"><a class="dribbble-icon" href="https://dribbble.com/"></a></li>
+          <li class="social-item"><a class="insta-icon" href="https://www.instagram.com/"></a></li>
+        </ul>
+        <div class="wrapper__sing-in-language">
+          <a class="sign-in__link" href="#">
+            <div class="sign-in">
+              <svg class="sign-in__icon" width="16" height="16" role="img">
+                  <title>Иконка входа в аккаунт</title>
+                  <use xlink:href="#account_circle-24px"></use>
+              </svg>
+              <span class="sign-in__text">Sign in</span>
+            </div>
+          </a>
+          <a class="language__link" href="#">
+            <div class="language">
+              <svg class="language__icon" width="16" height="16" role="img">
+                  <title>Иконка выбора языка</title>
+                  <use xlink:href="#language-24px"></use>
+              </svg>
+              <span class="language__text">Eng</span>
+              <svg class="language__icon-expand" width="10" height="5" role="img">
+                <title>Иконка раскрытия меню</title>
+                <use xlink:href="#expand"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-header"></div>
+
+      <div class="container-header">
+        <div class="logo">
+          <a class="logo__link" href="#">Pasco</a>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--active">
+              <a class="navigation__link" href="#">
+                <span class="navigation__text">Home</span>
+                <svg class="navigation__icon" width="10" height="5" role="img">
+                  <title>Иконка раскрытия меню</title>
+                  <use xlink:href="#expand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="navigation__text">Portfolio</span>
+                <svg class="navigation__icon" width="10" height="5" role="img">
+                  <title>Иконка раскрытия меню</title>
+                  <use xlink:href="#expand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="navigation__text">Blog</span>
+                  <svg class="navigation__icon" width="10" height="5" role="img">
+                    <title>Иконка раскрытия меню</title>
+                    <use xlink:href="#expand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="navigation__text">Pages</span>
+                <svg class="navigation__icon" width="10" height="5" role="img">
+                    <title>Иконка раскрытия меню</title>
+                    <use xlink:href="#expand"></use>
+                </svg>
+              </a>
+              </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="navigation__text">Shop</span>
+                <svg class="navigation__icon" width="10" height="5" role="img">
+                    <title>Иконка раскрытия меню</title>
+                    <use xlink:href="#expand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="navigation__text">Components</span>
+                  <svg class="navigation__icon" width="10" height="5" role="img">
+                    <title>Иконка раскрытия меню</title>
+                    <use xlink:href="#expand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="navigation__text">Features</span>
+                <svg class="navigation__icon" width="10" height="5" role="img">
+                    <title>Иконка раскрытия меню</title>
+                    <use xlink:href="#expand"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="icon__list">
+          <li class="icon__item">
+            <a class="icon__link" href="#">
+              <svg class="search__icon" width="22" height="22" role="img">
+                <title>Иконка поиск</title>
+                <use xlink:href="#search-24px"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon__item">
+            <a class="icon__link" href="#">
+              <svg class="like__icon" width="22" height="22" role="img">
+                <title>Иконка like</title>
+                <use xlink:href="#favorite_border-24px"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon__item">
+            <a class="icon__link" href="#">
+              <svg class="kart__icon" width="22" height="22" role="img">
+                <title>Иконка корзина</title>
+                <use xlink:href="#shopping_cart-24px"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="post-header-wrap">
+        <div class="post-header">
+          <p class="post-header__tags">Inspiration</p>
+          <h2 class="post-header__title">5 Ways milllennials can start building their future today</h2>
+          <a class="post-header__link-button">Read more</a>
+          <div class="post__wrap-user-info">
+            <div class="post__avatar"></div>
+            <span class="post__author-name">Henry Little</span>
+            <div class="post__wrap-date-time">
+              <div class="post__date">Apri 28, 2016</div>
+              <div class="post__time">10:15</div>
+            </div>
+          </div>
+          <div class="post__wrap-comment-like">
+            <div class="post__comments">
+              <svg class="post__comments-icon" width="22" height="22" role="img">
+                <title>Иконка like</title>
+                <use xlink:href="#forum-24px"></use>
+              </svg>
+              <span class="post__comments-text">Comments <span class="post__comments-sum">(28)</span></span>
+            </div>
+            <div class="post__likes">
+              <svg class="post__likes-icon" width="22" height="22" role="img">
+                <title>Иконка like</title>
+                <use xlink:href="#favorite_border-24px"></use>
+              </svg>
+              <span class="post__likes-text">Likes <span class="post__likes-sum">(07)</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      
+      <div class="filter">
+        <div class="container__filter">
+          <div class="filter__title">Sort blog:</div>
+
+          <form class="filter__list" >
+
+            <input type="radio" name="filter__tag" value="all" id="filter-all" class="filter__input visually-hidden">
+            <label class="filter__label filter__label--active" for="filter-all">All</label>
+
+            <input type="radio" name="filter__tag" value="photography" id="filter-photography" class="filter__input visually-hidden">
+            <label class="filter__label" for="filter-photography">Photography</label>
+
+            <input type="radio" name="filter__tag" value="lifestyle" id="filter-lifestyle" class="filter__input visually-hidden">
+            <label class="filter__label" for="filter-lifestyle">Lifestyle</label>
+
+            <input type="radio" name="filter__tag" value="trip" id="filter-trip" class="filter__input visually-hidden">
+            <label class="filter__label" for="filter-trip">Trip</label>
+
+            <input type="radio" name="filter__tag" value="inspiration" id="filter-inspiration" class="filter__input visually-hidden">
+            <label class="filter__label" for="filter-inspiration">Inspiration</label>
+
+          </form>
+
+        </div>
+      </div>
+      <div class="page">
+        <div class="container__page">
+          <section class="content">
+            <ul class="content__list">
+
+
+
+              <li class="content__item">
+                <div class="post">
+                  <div class="post__img-container">
+                    <img class="post__img-preview" src="img/layer-48.jpg" width="820" height="420">
+                    <div class="post__wrap-inner">
+                      <div class="post__tag">Lifestyle</div>
+                      <div class="post__comment-like">
+                        <div class="post__comment-inner">
+                          <svg class="post__comment-icon" width="22" height="22" role="img">
+                            <title>Иконка like</title>
+                            <use xlink:href="#forum-24px"></use>
+                          </svg>
+                          <span class="post__comment-sum">7</span>
+                        </div>
+                        <div class="post__like-inner">
+                          <svg class="post__like-icon" width="22" height="22" role="img">
+                            <title>Иконка like</title>
+                            <use xlink:href="#favorite_border-24px"></use>
+                          </svg>
+                          <span class="post__like-sum" >15</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h3 class="post__header">10 Things To Do To Change Your Life Forever</h3>
+                  <p class="post__text-preview">The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.</p>
+                </div>
+              </li>
+
+
+              <li class="content__item"></li>
+              <li class="content__item"></li>
+              <li class="content__item"></li>
+              <li class="content__item"></li>
+              <li class="content__item"></li>
+              <li class="content__item"></li>
+              <li class="content__item"></li>
+              <li class="content__item"></li>
+            </ul>
+
+          </section>
+          <section class="sidebar">
+
+          </section>
+        </div>
+      </div>
+
+
     </main>
     <footer>
-    
+
     </footer>
   </body>
 </html>
